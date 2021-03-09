@@ -218,7 +218,7 @@ span:focus>img,
 span:hover>img {
     display: block;
     position: absolute;
-    max-width: 100vW;
+    max-width: 50vW;
     z-index: 999;
 }
 
@@ -232,4 +232,16 @@ span:hover>img {
 .compFact ol.backBlue {
     background-color: #4DA0BE;
     color: white;
+}
+
+h4 + div {
+    display: none;
+}
+
+h4 span::after {
+    content: '  +';
+}
+
+h4.active span::after {
+    content: '  -';
 }
