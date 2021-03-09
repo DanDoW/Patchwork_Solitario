@@ -4,6 +4,7 @@ body {
     background-color: #E4D2A0;
 }
 
+.container,
 header {
     padding: 20px;
     text-align: center;
@@ -55,6 +56,7 @@ h4 span {
     padding: 5px 40px;
     line-height: 1.5;
     font-size: 18px;
+    color: white;
 }
 
 ol.backGreen li::before,
@@ -82,7 +84,7 @@ ol {
     padding-inline-start: 0;
     list-style: none;
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 ol li {
@@ -110,26 +112,39 @@ ul {
     list-style: none;
 }
 
+div.backRed,
+div.backGreen,
 div.backBrown {
     background-color: #965B49;
-    border-radius: 15px;
+    border-radius: 5px;
     color: white;
     position: relative;
     padding: 10px 20px 10px 50px;
-    margin-bottom: 100px;
+}
+div.backGreen {
+    background-color: #C2B859;
+    color: black;
+}
+div.backRed {
+    background-color: #E94D51;
 }
 
+div.backGreen h5,
 div.backBrown h5 {
     position: absolute;
     top: -40px;
     left: 20px;
     background-color: #C2B859;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 5px 20px;
     color: black;
 }
+div.backGreen h5 {
+    background-color: #965B49;
+    color: white;
+}
 
-div.backBrown span {
+div.backBrown li span {
     position: absolute;
     left: 30px;
     width: 50px;
@@ -137,7 +152,7 @@ div.backBrown span {
     justify-content: space-between;
 }
 
-div.backBrown span::after {
+div.backBrown li span::after {
     content: "->";
     text-align: right;
 }
@@ -149,12 +164,74 @@ div.backBrown h6 {
     left: 20px;
     right: -20px;
     background-color: #C2B859;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 5px 20px;
     font-size: 16px;
     color: black;
 }
 
+div.extraSpace {
+    height: 100px;
+}
+
+.tabla {
+    margin-bottom: 50px;
+}
+
+.tabla h5 {
+    position: relative;
+    text-align: center;
+    transform: rotate(3deg);
+    margin-bottom: 50px;
+    max-width: 500px;
+    border-radius: 5px;
+    background-color: #4DA0BE;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.tabla h5 span {
+    padding: 5px 20px;
+    position: absolute;
+    top: 5px;
+    left: 180px;
+    border-radius: 5px;
+    transform: rotate(-3deg);
+    background-color: #C2B859;
+}
+
+.tabla table {
+    margin: 25px auto 0;
+    background-color: #4DA0BE;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 20px;
+}
+
+.tabla table tr td:first-child {
+    text-align: center;
+}
+
 span>img {
     display: none;
+}
+
+span:focus>img,
+span:hover>img {
+    display: block;
+    position: absolute;
+    max-width: 100vW;
+    z-index: 999;
+}
+
+.compFact ol.backGreen {
+    background-color: #C2B859;
+}
+.compFact ol.backBrown {
+    background-color: #965B49;
+    color: white;
+}
+.compFact ol.backBlue {
+    background-color: #4DA0BE;
+    color: white;
 }
