@@ -179,8 +179,9 @@ div.extraSpace {
 }
 
 .tabla h5 {
-    position: relative;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: rotate(3deg);
     margin-bottom: 50px;
     max-width: 500px;
@@ -192,9 +193,6 @@ div.extraSpace {
 
 .tabla h5 span {
     padding: 5px 20px;
-    position: absolute;
-    top: 5px;
-    left: 180px;
     border-radius: 5px;
     transform: rotate(-3deg);
     background-color: #C2B859;
